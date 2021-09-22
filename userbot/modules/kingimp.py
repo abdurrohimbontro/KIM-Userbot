@@ -88,7 +88,7 @@ async def bruh(message, user):
     ln = user.last_name
     name = fn + (" " + ln if ln else "")
     name = "***" + name
-    await message.edit(name + choice([" ", " Tidak "]) + "Adalah Seorang Penipu! ***")
+    await message.edit(name + choice([" ", " Tidak "]) + "Adalah Seorang Impostor! ***")
 
 
 CMD_HELP.update(
