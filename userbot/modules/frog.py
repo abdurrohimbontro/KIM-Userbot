@@ -12,7 +12,7 @@ from userbot import CMD_HELP, bot
 
 @register(outgoing=True, pattern=r"^\.frog (.*)")
 async def honkasays(event):
-    await event.edit("`Sedang Memprosess!!!`")
+    await event.edit("`lagi di prosess cokk!!!`")
     text = event.pattern_match.group(1)
     if not text:
         return await event.edit("`Beri Aku Bebeberapa Teks, Contoh .frog test`")
@@ -42,9 +42,9 @@ async def honkasays(event):
             )
         await event.delete()
     except ChatSendInlineForbiddenError:
-        await event.edit("`King! Saya tidak bisa menggunakan hal-hal sebaris di sini...`")
+        await event.edit("`Tuanku! Saya tidak bisa menggunakan hal-hal sebaris di sini...`")
     except ChatSendStickersForbiddenError:
-        await event.edit("Maaf King, saya tidak bisa mengirim stiker ke sini !!")
+        await event.edit("Maaf Tuanku, saya tidak bisa mengirim stiker ke sini !!")
 
 
 CMD_HELP.update({"frog": "⚡𝘾𝙈𝘿⚡`.frog`\
