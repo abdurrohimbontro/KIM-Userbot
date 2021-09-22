@@ -122,13 +122,13 @@ async def download_api(dl):
     elif URL_MSG:
         URL = URL_MSG.text
     else:
-        await dl.edit("`Empty information...`")
+        await dl.edit("`Tidak ada informasi...`")
         return
     if not re.findall(r"\bhttps?://download.*pixelexperience.*\.org\S+", URL):
         await dl.edit("`Invalid information...`")
         return
     driver = await chrome()
-    await dl.edit("`Getting information...`")
+    await dl.edit("`mendapatkan informasi...`")
     driver.get(URL)
     error = driver.find_elements_by_class_name("swal2-content")
     if len(error) > 0 and error[0].text == "File Not Found.":
