@@ -1,4 +1,4 @@
-# King-Userbot
+# Kim-Userbot
 from time import sleep
 from userbot import CMD_HELP, bot
 from userbot.events import register
@@ -79,7 +79,7 @@ async def typewriter(typew):
                      "╬═╬ \n"
                      "╬═╬ \n"
                      "╬═╬ \n"
-                     "╬═╬ Hallo Semuanya :) \n"
+                     "╬═╬ OTW NIKAHAN MANTAN :) \n"
                      "╬═╬☻/ \n"
                      "╬═╬/▌ \n"
                      "╬═╬/ \\ \n")
@@ -98,7 +98,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.bundir(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`Dadah Semuanya...`          \n　　　　　|"
+    await typew.edit("`di duga bunuh diri karena gabut...`          \n　　　　　|"
                      "\n　　　　　| \n"
                      "　　　　　| \n"
                      "　　　　　| \n"
@@ -244,9 +244,9 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.babi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("┈┈┏━╮╭━┓┈╭━━━━╮\n"
-                     "┈┈┃┏┗┛┓┃╭┫Ngok ┃\n"
-                     "┈┈╰┓▋▋┏╯╯╰━━━━╯\n"
+    await typew.edit("┈┈┏━╮╭━┓┈╭━━━━━━━━━━━╮\n"
+                     "┈┈┃┏┗┛┓┃╭┫  ngepet kuy ┃\n"
+                     "┈┈╰┓▋▋┏╯╯╰━━━━━━━━━━━╯\n"
                      "┈╭━┻╮╲┗━━━━╮╭╮┈\n"
                      "┈┃▎▎┃╲╲╲╲╲╲┣━╯┈\n"
                      "┈╰━┳┻▅╯╲╲╲╲┃┈┈┈\n"
@@ -315,6 +315,11 @@ async def typewriter(typew):
     await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (")
     await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (\n              \\  ")
 
+
+@register(outgoing=True, pattern='^.kim(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("
 CMD_HELP.update({
     "vip":
     "`.bulan` ; `.hati` ; `.bernyanyi`\
