@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# KING USERBOT
+# KIM USERBOT
 from asyncio import sleep
 
 from requests import get
