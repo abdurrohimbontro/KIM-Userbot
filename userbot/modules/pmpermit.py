@@ -27,13 +27,13 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
-    f"╔══════ 👑 ══════╗\n     **ROOM CHAT KING**     \n╚══════ 〠 ══════╝  \n"
-    f"⎆ __Halo kawan , saya bot yang menjaga room chat king {DEFAULTUSER} di mohon jangan melakukan spam , kalau anda melakukan itu OTOMATIS saya akan memblockir anda!__ \n"
+    f"╔══════ 👑 ══════╗\n     **ROOM CHAT TUAN MUDA**     \n╚══════ 〠 ══════╝  \n"
+    f"⎆ __Halo kisanak , saya bot yang menjaga room chat Tuan Muda {DEFAULTUSER} di mohon jangan melakukan spam , kalau anda melakukan itu OTOMATIS saya akan memblockir anda!__ \n"
     "⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊\n"
     f"⎆**DILARANG SPAM 1/3** \n"
     "⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊\n"
-    f"◈ **KING** : {DEFAULTUSER}\n"
-    f"◈ **SUPPORT** ⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\n")
+    f"◈ **TUAN MUDA** : {DEFAULTUSER}\n"
+    f"◈ **SUPPORT**   : 🍁𝐊𝐈𝐌 𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁\n")
 # =================================================================
 
 
@@ -92,7 +92,7 @@ async def permitpm(event):
             if COUNT_PM[event.chat_id] > 3:
                 await event.respond(
                     "`Anda Telah Di Blokir Karna Melakukan Spam Pesan`\n"
-                    "`Ke Room Chat King`"
+                    "`Ke Room Chat Tuan Muda`"
                 )
 
                 try:
@@ -102,7 +102,7 @@ async def permitpm(event):
                     if BOTLOG:
                         await event.client.send_message(
                             BOTLOG_CHATID,
-                            "king, Terjadi Masalah Saat Menghitung Private Message, Mohon Restart Bot!",
+                            "Tuan, Terjadi Masalah Saat Menghitung Private Message, Mohon Restart Bot!",
                         )
                     return LOGS.info("CountPM tidak dibunyikan king")
 
@@ -327,7 +327,7 @@ async def unblockpm(unblock):
 async def add_pmsg(cust_msg):
     """Set your own Unapproved message"""
     if not PM_AUTO_BAN:
-        return await cust_msg.edit("**King Anda Harus Menyetel** `PM_AUTO_BAN` **Ke** `True`")
+        return await cust_msg.edit("**Anda Harus Menyetel** `PM_AUTO_BAN` **Ke** `True`")
     try:
         import userbot.modules.sql_helper.globals as sql
     except AttributeError:
@@ -397,9 +397,9 @@ async def permitpm(event):
     if event.is_private:
         if not pm_permit_sql.is_approved(chats.id):
             pm_permit_sql.approve(
-                chats.id, "`King Apis Telah Mengirimi Anda Pesan 😯`")
+                chats.id, "`Tuan Muda 𝐊𝐈𝐌 Telah Mengirimi Anda Pesan 😯`")
             await borg.send_message(
-                chats, "**Menerima Pesan!, Pengguna Terdeteksi Adalah King Apis**"
+                chats, "**Menerima Pesan!, Pengguna Terdeteksi Adalah Tuan Muda 𝐊𝐈𝐌**"
             )
 
 
