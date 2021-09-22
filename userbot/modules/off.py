@@ -24,10 +24,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    f"**✘ Maaf King {ALIVE_NAME} Sedang 𝗢𝗙𝗙 ✘**",
-    f"**✘ Maaf King {ALIVE_NAME} Sedang 𝗢𝗙𝗙\n Tunggu Sampai Online ✘**",
-    f"**✘ King {ALIVE_NAME} Sedang 𝗢𝗙𝗙\n Tunggulah Sampai Online ✘**",
-    f"**✘ Maaf King {ALIVE_NAME} Sedang 𝗢𝗙𝗙 ✘**",
+    f"**✘ 𝐌𝐚𝐚𝐟 𝐓𝐮𝐚𝐧 𝐌𝐮𝐝𝐚 {ALIVE_NAME} Sedang 𝗢𝗙𝗙 ✘**",
+    f"**✘ 𝐌𝐚𝐚𝐟 𝐓𝐮𝐚𝐧 𝐌𝐮𝐝𝐚 {ALIVE_NAME} Sedang 𝗢𝗙𝗙\n Tunggu Sampai Online ✘**",
+    f"**✘ 𝐓𝐮𝐚𝐧 𝐌𝐮𝐝𝐚 {ALIVE_NAME} Sedang 𝗢𝗙𝗙\n Tunggulah Sampai Online ✘**",
+    f"**✘ 𝐌𝐚𝐚𝐟 𝐓𝐮𝐚𝐧 𝐌𝐮𝐝𝐚 {ALIVE_NAME} Sedang 𝗢𝗙𝗙 ✘**",
 ]
 
 
@@ -71,7 +71,7 @@ async def set_afk(afk_e):
     else:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name="⚡𝗢𝗙𝗙⚡"))
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#OFF\n**King Telah OFF!**")
+        await afk_e.client.send_message(BOTLOG_CHATID, "#OFF\n**𝐓𝐮𝐚𝐧 𝐌𝐮𝐝𝐚 𝐓𝐞𝐥𝐚𝐡 𝐨𝐟𝐟!**")
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
     raise StopPropagation
@@ -81,7 +81,7 @@ async def set_afk(afk_e):
 async def type_afk_is_not_true(notafk):
     """ This sets your status as not afk automatically when you write something while being afk """
     global ISAFK
-    global COUNT_MSG
+    global COUNT_MSGTelah
     global USERS
     global AFKREASON
     global USER_AFK  # pylint:disable=E0602
@@ -267,7 +267,7 @@ CMD_HELP.update(
     {
         "off": "**✘ Plugin : **`off`\
         \n\n  •  **Perintah :** `.off`\
-        \n  •  **Function : **Memberi tahu kalau King sedang OFF, dan menguubah nama belakang menjadi ⚡️𝗢𝗙𝗙⚡️ \
+        \n  •  **Function : **Memberi tahu kalau Tuan Muda sedang OFF, dan menguubah nama belakang menjadi ⚡️𝗢𝗙𝗙⚡️ \
     "
     }
 )
