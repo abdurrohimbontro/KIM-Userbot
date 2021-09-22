@@ -164,8 +164,8 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Versi:** \n "
-            f"heads/King-Userbot-0-x634i7u1"
+            "**⚜-**🍁𝐊𝐈𝐌 𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 Versi:** \n "
+            f"heads/Kim-Userbot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
@@ -228,18 +228,18 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡** \n"
+        f"**🍁𝐊𝐈𝐌 𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁** \n"
         f"\n__**{KING_TEKS_KUSTOM}**__\n"
         f"**══════════════════════**\n"
-        f"**🤴 King** \n"
+        f"**🤴 Tuan Muda** \n"
         f" ↳ : `{DEFAULTUSER}` \n"
         f"**🔎 Username** \n"
         f" ↳ : `@{user.username}` \n"
         f"╔═══════════════════════\n"
-        f"╟[•⚙️ `Telethon :`Ver {version.__version__} \n"
-        f"╟[•🐍 `Python   :`Ver {python_version()} \n"
-        f"╟[•👾 `Bot Ver  :`{BOT_VER} \n"
-        f"╟[•📂 `Plugins  :`{len(modules)} \n"
+        f"╟[•🏷️ `Telethon :`Ver {version.__version__} \n"
+        f"╟[•🐲 `Python   :`Ver {python_version()} \n"
+        f"╟[•🦾 `Bot Ver  :`{BOT_VER} \n"
+        f"╟[•🗃️ `Plugins  :`{len(modules)} \n"
         f"╚═══════════════════════")
     if ALIVE_LOGO:
         try:
@@ -266,21 +266,21 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"𝗫 ►⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡◄ 𝗫 \n"
+        f"𝗫 ►🍁𝐊𝐈𝐌 𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁◄ 𝗫 \n"
         f"╭━━━━━━━━━━━━━━━━━━━━━╮\n"
-        f"╟ 🤴 KING     : {DEFAULTUSER}\n"
+        f"╟ 🤴 Tuan Muda    : {DEFAULTUSER}\n"
         f"╟ 🔎 Username : @{user.username}\n"
         f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n"
-        f"╟◈ ⚙️ `Telethon :`v {version.__version__} \n"
-        f"╟◈ 🐍 `Python   :`v {python_version()} \n"
+        f"╟◈ 🏷️ `Telethon :`v {version.__version__} \n"
+        f"╟◈ 🐲 `Python   :`v {python_version()} \n"
         f"╟◈ 💻 `Branch  :`{UPSTREAM_REPO_BRANCH} \n"
-        f"╟◈ 🛠 `Version  :`{BOT_VER} \n"
-        f"╟◈ 📂 `Plugins  :`{len(modules)} Plugin \n"
+        f"╟◈ 🦾 `Version  :`{BOT_VER} \n"
+        f"╟◈ 🗃️ `Plugins  :`{len(modules)} Plugin \n"
         f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n"
-        f"◈ **PEMILIK :** [Apis](https://t.me/PacarFerdilla) \n"
-        f"◈ **REPO   :** [King-Userbot](https://github.com/apisuserbot/King-Userbot) \n"
-        f"◈ **TEAM   :** [Grup Support](https://t.me/KingUserbotSupport) \n"
-        f"◈ **KING BY :** {DEFAULTUSER} \n"
+        f"◈ **PEMILIK :** [🍁𝐊𝐈𝐌🍁](https://t.me/warga_pati) \n"
+        f"◈ **REPO   :** [Kim-Userbot](https://github.com/abdurrohimbontro/Kim-Userbot) \n"
+        f"◈ **TEAM   :** [Grup Random](https://t.me/crazy_people345) \n"
+        f"◈ **Tuan Muda BY :** {DEFAULTUSER} \n"
         f"━━━━━━━━━━━━━━━━━━━━━╯")
     if ALIVE_LOGO:
         try:
@@ -306,68 +306,68 @@ async def amireallyalive(alive):
 async def redis(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑..__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑...__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑..__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑...__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑..__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
+    await alive.edit("__🍁𝐊𝐈𝐌🍁.__")
+    await alive.edit("__🍁𝐊𝐈𝐌🍁..__")
+    await alive.edit("__🍁𝐊𝐈𝐌🍁...__")
+    await alive.edit("__🍁𝐊𝐈𝐌🍁.__")
+    await alive.edit("__🍁𝐊𝐈𝐌🍁..__")
+    await alive.edit("__🍁𝐊𝐈𝐌🍁...__")
+    await alive.edit("__🍁𝐊𝐈𝐌🍁..__")
+    await alive.edit("__🍁𝐊𝐈𝐌🍁...__")
     await alive.edit("__𝐗...𝐒𝐈𝐒𝐓𝐄𝐌...𝐗__")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡              👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡             👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡            👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡           👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡          👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡         👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡        👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡       👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡      👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡     👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡    👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡   👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡  👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ 👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏👑")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊👑⚡")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽👑𝙏⚡")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍👑𝙊𝙏⚡")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀👑𝘽𝙊𝙏⚡")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐𝙎👑𝙍𝘽𝙊𝙏⚡")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-𝙐👑𝙍𝘽𝙊𝙏⚡")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴-👑𝙎𝙀𝙍𝘽𝙊𝙏⚡")
-    await alive.edit("⚡𝗞𝗶𝗻𝗴👑𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡")
-    await alive.edit("⚡𝗞𝗶𝗻👑-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡")
-    await alive.edit("⚡𝗞👑𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡")
-    await alive.edit("⚡👑𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡")
-    await alive.edit("👑𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡")
-    await alive.edit("⚡")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁              ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁             ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁            ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁           ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁          ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁         ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁        ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁       ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁      ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁     ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁    ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁   ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁  ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 ❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓❄️")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎❄️🍁")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁❄️𝐓🍁")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑❄️𝐎𝐓🍁")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒𝐄❄️𝐁𝐎𝐓🍁")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔𝐒❄️𝐑𝐁𝐎𝐓🍁")
+    await alive.edit("🍁𝐊𝐈𝐌-𝐔❄️𝐄𝐑𝐁𝐎𝐓🍁")
+    await alive.edit("🍁𝐊𝐈𝐌-❄️𝐒𝐄𝐑𝐁𝐎𝐓🍁")
+    await alive.edit("🍁𝐊𝐈𝐌❄️𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁")
+    await alive.edit("🍁𝐊𝐈❄️-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁")
+    await alive.edit("🍁𝐊❄️𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁")
+    await alive.edit("🍁❄️𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁")
+    await alive.edit("❄️𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁")
+    await alive.edit("💝")
     await asyncio.sleep(3)
-    await alive.edit("😈")
+    await alive.edit("💖")
     await asyncio.sleep(3)
     output = (
         f"**╔══════━━━━━━━══════╗ ** \n"
-        f"**|   ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡   | ** \n"
+        f"**|   🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁   | ** \n"
         f"**╚══════━━━━━━━══════╝ ** \n"
         f"╭╼════════════════════╾╮ \n"
         f"│  ⇱ **SISTEM ALIVE BOT** ⇲ \n"
         f"┟╼════════════════════╾┤ \n"
-        f"╟◈ 🤴 `King     :`{DEFAULTUSER} \n"
+        f"╟◈ 🤴 `Tuan Muda:`{DEFAULTUSER} \n"
         f"╟◈ 🔎 `Username :`@{user.username} \n"
-        f"╟◈ ⚙️ `Telethon :`v. {version.__version__} \n"
-        f"╟◈ 🐍 `Python   :`v. {python_version()} \n"
-        f"╟◈ 🛠️ `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
-        f"╟◈ 👾 `Bot Ver  :`v. {BOT_VER} \n"
-        f"╟◈ 📂 `Plugins  :`{len(modules)} Plugins \n"
+        f"╟◈ 🏷️ `Telethon :`v. {version.__version__} \n"
+        f"╟◈ 🐲 `Python   :`v. {python_version()} \n"
+        f"╟◈ 💻 `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
+        f"╟◈ 🦾 `Bot Ver  :`v. {BOT_VER} \n"
+        f"╟◈ 🗃️ `Plugins  :`{len(modules)} Plugins \n"
         f"┞╼════════════════════╾┤ \n"
-        f"├◈ **Support Terus Repo Kami** \n"
-        f"│    **Dengan Link Di Bawah Ini.** \n"
+        f"├◈ **ya inilah Repo Kami** \n"
+        f"│    **emang ga jelas.** \n"
         f"╰╼════════════════════╾╯ \n"
-        f"| [Repo](https://apisuserbot.github.io/King-Userbot) | [King-Team](t.me/KingUserbotSupport) | "
-        f"[Pemilik](t.me/PacarFerdilla)")
+        f"| [Repo](https://abdurrohimbontro.github.io/Kim-Userbot) | [Grup Random](t.me/crazy_people345) | "
+        f"[Pemilik](t.me/warga_pati)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
