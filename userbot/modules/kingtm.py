@@ -31,11 +31,11 @@ async def _(event):
         except YouBlockedUserError:
             await king.edit("`Mohon buka blokir` @TempMailBot `lalu coba lagi`")
             return
-        await event.edit(f"**KING TEMPMAIL** ~ `{response.message.message}`\n\n[KLIK DISINI UNTUK VERIFIKASI]({kinguserbot})")
+        await event.edit(f"**KIMTEMPMAIL** ~ `{response.message.message}`\n\n[KLIK DISINI UNTUK VERIFIKASI]({kimuserbot})")
 
 
-# Apis Ganteng
-# Ported For King Userbot From Ultroid
+# Kim Ganteng
+# Ported For Kim Userbot From Ultroid
 
 CMD_HELP.update({"tempmail": "**Modules:** __Temp Mail__\n\n⚡𝘾𝙈𝘿⚡: `.tm`"
                  "\n**Penjelasan:** Mendapatkan Email Gratis Dari Temp Mail"})
