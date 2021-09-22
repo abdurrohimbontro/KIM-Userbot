@@ -12,7 +12,7 @@ from userbot import CMD_HELP, bot
 async def gcast(event):
     xx = event.pattern_match.group(1)
     if not xx:
-        return await event.edit("`King, Mohon Berikan Sebuah Pesan`")
+        return await event.edit("`woi, Mohon Berikan Sebuah Pesan`")
     tt = event.text
     msg = tt[6:]
     kk = await event.edit("`Sedang Mengirim Pesan Secara Global...⚡️`")
