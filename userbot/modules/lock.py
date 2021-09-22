@@ -157,10 +157,10 @@ async def rem_locks(event):
         what = "Semuanya"
     else:
         if not input_str:
-            await event.edit("`Apa Yang Harus Saya Buka King?..⚡`")
+            await event.edit("`Apa Yang Harus Saya Buka Tuan muda?..⚡`")
             return
         else:
-            await event.edit(f"`King Jenis Kunci Yang Mau Anda Buka Tidak Valid` `{input_str}`")
+            await event.edit(f"`Tuan Jenis Kunci Yang Mau Anda Buka Tidak Valid` `{input_str}`")
             return
 
     unlock_rights = ChatBannedRights(
