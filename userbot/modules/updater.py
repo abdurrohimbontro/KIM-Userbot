@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari King Userbot.`'
+                ' untuk dapat deploy perubahan terbaru dari Kim Userbot.`'
             )
             repo.__del__()
             return
@@ -63,11 +63,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy King Userbot dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy Kim Userbot dyno.`'
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
-                         '\nDyno ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
+                         '\nDyno 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -91,14 +91,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Berhasil Di Deploy!`\n" "`Restarting, Mohon Menunggu King.....⚡`")
+            await event.edit("`🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 Berhasil Di Deploy!`\n" "`Restarting, Mohon Menunggu Tuan.....⚡`")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`King-Userbot Berhasil Di Update`")
+                "`Kim-Userbot Berhasil Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -115,18 +115,18 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ `Berhasil Di Update!`')
+    await event.edit('🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 `Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ `Di Restart....`')
+    await event.edit('🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 `Di Restart....`')
     await asyncio.sleep(1)
-    await event.edit('`Mohon Menunggu Beberapa Detik King`')
+    await event.edit('`Mohon Menunggu Beberapa Detik Tuanku`')
     await asyncio.sleep(10)
     await event.delete()
 
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**King-Userbot Telah Di Perbarui**")
+            "**🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 Telah Di Perbarui**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -144,7 +144,7 @@ async def upstream(event):
     off_repo = UPSTREAM_REPO_URL
     force_update = False
     try:
-        txt = "`Maaf King Pembaruan Tidak Dapat Di Lanjutkan Karna "
+        txt = "`Maaf Pembaruan Tidak Dapat Di Lanjutkan Karna "
         txt += "Beberapa Masalah Terjadi`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
@@ -188,13 +188,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ **Sudah Versi Terbaru**\n')
+            f'\n🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 **Sudah Versi Terbaru**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**✣ Pembaruan Untuk ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ [{ac_br}]:\n\n⎆ Pembaruan:**\n`{changelog}`'
+        changelog_str = f'**✣ Pembaruan Untuk 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 [{ac_br}]:\n\n⎆ Pembaruan:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -208,18 +208,18 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('Perintah Untuk Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n• Perintah`.update now`\n• Perintah`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡.__')
+        return await event.respond('Perintah Untuk Update 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁\n• Perintah`.update now`\n• Perintah`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁.__')
 
     if force_update:
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Loading....1%`')
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Loading....20%`')
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Loading....35%`')
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Loading....77%`')
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Updating...90%`')
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Mohon Menunggu King....100%`')
+        await event.edit('`⎆ Proses Update 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁, Loading....1%`')
+        await event.edit('`⎆ Proses Update 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁, Loading....20%`')
+        await event.edit('`⎆ Proses Update 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁, Loading....35%`')
+        await event.edit('`⎆ Proses Update 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁, Loading....77%`')
+        await event.edit('`⎆ Proses Update 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁, Updating...90%`')
+        await event.edit('`⎆ Proses Update 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁, Mohon Menunggu Tuan Muda....100%`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
@@ -235,11 +235,11 @@ CMD_HELP.update(
     {
         "update": "**✘ Plugin : **`update`\
         \n\n  •  **Perintah :** `.update`\
-        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡.\
+        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁.\
         \n\n  •  **Perintah :** `.update now`\
-        \n  •  **Function : **Memperbarui ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡.\
+        \n  •  **Function : **Memperbarui 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁.\
         \n\n  •  **Perintah :** `.update deploy`\
-        \n  •  **Function : **Memperbarui ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Dengan Cara Deploy Ulang.\
+        \n  •  **Function : **Memperbarui 🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 Dengan Cara Deploy Ulang.\
     "
     }
 )
