@@ -273,7 +273,7 @@ async def anime(event):
 @register(outgoing=True, pattern=r"^\.manga ?(.*)")
 async def manga(event):
     query = event.pattern_match.group(1)
-    await event.edit("`Searching Manga...`")
+    await event.edit("`pencarian Manga...`")
     if not query:
         await event.edit("`Bruh.. Gib me Something to Search`")
         return
