@@ -41,7 +41,7 @@ async def get_adzan(adzan):
     result = (
         f"**Jadwal Sholat**:\n"
         f"📅 `{date} | {timezone}`\n"
-        f"🌏 `{city} | {country}`\n\n"
+        f"🏞️ `{city} | {country}`\n\n"
         f"**Imsak :** `{imsak}`\n"
         f"**Subuh :** `{subuh}`\n"
         f"**Zuhur :** `{zuhur}`\n"
