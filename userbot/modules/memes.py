@@ -1404,7 +1404,7 @@ async def weebify(e):
         get = await e.get_reply_message()
         args = get.text
     if not args:
-        await e.edit("`Apa Yang Anda Lakukan King`")
+        await e.edit("`Apa Yang Anda Lakukan`")
         return
     string = '  '.join(args).lower()
     for normiecharacter in string:
@@ -1424,7 +1424,7 @@ async def claptext(memereview):
     elif textx:
         message = textx.text
     else:
-        return await memereview.edit("`King, Mohon Balas Ke Pesan Orang Yang Ingin Anda Puji`")
+        return await memereview.edit("`Mohon Balas Ke Pesan Orang Yang Ingin Anda Puji`")
     reply_text = "👏 "
     reply_text += message.replace(" ", " 👏 ")
     reply_text += " 👏"
@@ -1543,7 +1543,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern=r"^\.leave$")
 async def leave(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("`Lord Telah Meninggalkan Grup ツ`")
+        await e.edit("`Kim Telah Meninggalkan Grup ツ`")
 
 
 @register(outgoing=True, pattern=r"^\.fail$")
@@ -1630,7 +1630,7 @@ async def gtfo(e):
         await e.edit("`\n█████████`"
                      "`\n█▄█████▄█`"
                      "`\n█▼▼▼▼▼`"
-                     "`\n█       STFU FAGGOT'S`"
+                     "`\n█   hoooaaaahhh ngantok`"
                      "`\n█▲▲▲▲▲`"
                      "`\n█████████`"
                      "`\n ██   ██`")
@@ -1641,7 +1641,7 @@ async def taco(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("\n{\\__/}"
                      "\n(●_●)"
-                     "\n( >💩 Mau Tai Ku?")
+                     "\n( >💩 halah e'ek")
 
 
 @register(outgoing=True, pattern=r"^\.paw$")
@@ -1749,7 +1749,7 @@ async def koc(e):
         await e.edit("8✊===D💦💦💦💦💦💦💦💦")
         await e.edit("8===✊D💦💦💦💦💦💦💦💦💦")
         await e.edit("8==✊=D💦💦💦💦💦💦💦💦💦💦")
-        await e.edit("8=✊==D Lah Kok Habis?")
+        await e.edit("8=👊==D croooot")
         await e.edit("😭😭😭😭")
 
 
