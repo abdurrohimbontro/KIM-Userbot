@@ -108,7 +108,7 @@ async def log(log_text):
 @register(outgoing=True, pattern="^.kickme$")
 async def kickme(leave):
     """ Basically it's .kickme command """
-    await leave.edit("`King Telah Meninggalkan Grup`")
+    await leave.edit("`Dhlh gw pergi 🥺`")
     await leave.client.kick_participant(leave.chat_id, 'me')
 
 
@@ -136,7 +136,7 @@ async def mute_chat(mute_e):
         return
     await mute_e.edit(str(mute_e.chat_id))
     kread(str(mute_e.chat_id))
-    await mute_e.edit("`Ssshssh King Telah Membisukan Obrolan!`")
+    await mute_e.edit("`Ssshssh jngn brisik TUAN MUDA Telah Membisukan Obrolan!`")
     await sleep(2)
     await mute_e.delete()
     if BOTLOG:
@@ -182,7 +182,7 @@ async def sedNinjaToggle(event):
         await event.delete()
     elif event.pattern_match.group(1) == "off":
         regexNinja = False
-        await event.edit("`Berhasil Menonaktifkan Mode Regez Ninja.`")
+        await event.edit("`Berhasil Menonaktifkan Mode Regex Ninja.`")
         await sleep(1)
         await event.delete()
 
@@ -224,7 +224,7 @@ async def get_chatinfo(event):
             await event.edit("`Grup/Channel Tidak Valid`")
             return None
         except ChannelPrivateError:
-            await event.edit("`Ini Adalah Grup/Channel Privasi Atau Lord Dibanned Dari Sana`")
+            await event.edit("`Ini Adalah Grup/Channel Privasi Atau tuan Dibanned Dari Sana`")
             return None
         except ChannelPublicGroupNaError:
             await event.edit("`Channel Atau Supergrup Tidak Ditemukan`")
@@ -445,7 +445,7 @@ CMD_HELP.update({
 \nPenjelasan: Menambahkan pengguna ke obrolan, bukan ke pesan pribadi. "
 })
 
-# King Userbot
+# Kim Userbot
 CMD_HELP.update({"mutechat": "**Modules:** __Mute Chat__\
 \n\n**Perintah:** `.mutechat`\
 \n**Penjelasan:** Memungkinkan Anda Membisukan Obrolan Apapun.\
