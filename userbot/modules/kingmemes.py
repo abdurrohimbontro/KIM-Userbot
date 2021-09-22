@@ -35,16 +35,16 @@ async def _(event):
 
         animation_chars = [
 
-            "👁👁\n  👄  =====> Hey, How are you?",
-            "👁👁\n  👅  =====> Everything okay?",
-            "👁👁\n  💋  =====> Why are you staring at this?",
-            "👁👁\n  👄  =====> You idiot",
-            "👁👁\n  👅  =====> Go away",
-            "👁👁\n  💋  =====> Stop laughing",
-            "👁👁\n  👄  =====> It's not funny",
-            "👁👁\n  👅  =====> I guess ur still looking",
-            "👁👁\n  💋  =====> Ok retard 😑",
-            "👁👁\n  👄  =====> I go away then"
+            "👁👁\n =====> Hai,apa kabar?",
+            "👁👁\n =====> Semuanya baik-baik saja?",
+            "👁👁\n =====> Mengapa kamu menatap ini?",
+            "👁👁\n =====> Dasar bodoh",
+            "👁👁\n =====> Pergi",
+            "👁👁\n =====> Berhenti tertawa",
+            "👁👁\n =====> Tidak lucu",
+            "👁👁\n =====> Sepertinya kamu masih mencari",
+            "👁👁\n =====> Oke mundur ",
+            "👁👁\n =====> Aku pergi kalau begitu"
         ]
 
         for i in animation_ttl:
@@ -54,7 +54,7 @@ async def _(event):
             await event.edit(animation_chars[i % 103])
 
 
-@register(outgoing=True, pattern="^.earth(?: |$)(.*)")
+@register(outgoing=True, pattern="^.bumi(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -65,7 +65,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@bot.on(events.NewMessage(pattern=r"\.bombs", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.bom", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -88,7 +88,7 @@ async def _(event):
     await asyncio.sleep(0.5)
     await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n😵😵😵😵 \n")
     await asyncio.sleep(0.5)
-    await event.edit("RIP PLOX...")
+    await event.edit("MODAR KABEH LAH...")
     await asyncio.sleep(2)
     await event.delete()
 
@@ -152,7 +152,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "police":
+    if input_str == "polisi":
 
         await event.edit(input_str)
 
@@ -169,7 +169,7 @@ async def _(event):
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
             "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-            "OUB **Police is Chasing you now**"
+            "OUB **Polisi mengejarmu sekarang**"
 
         ]
 
@@ -458,25 +458,25 @@ async def _(event):
             await event.edit(animation_chars[i % 24])
 
 
-@register(outgoing=True, pattern="^.gangstar(?: |$)(.*)")
+@register(outgoing=True, pattern="^.uhtea(?: |$)(.*)")
 async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in (
             "/", "#", "@", "!"):
-        await event.edit("EVERyBOdy")
+        await event.edit("ehm UHTEA")
         await asyncio.sleep(0.3)
-        await event.edit("wAs")
+        await event.edit("boleh kenalan gak?")
         await asyncio.sleep(0.2)
-        await event.edit("GanGeSTar")
+        await event.edit("kenalan aku kim")
         await asyncio.sleep(0.5)
-        await event.edit("UNtIL ")
+        await event.edit("pas banget nih")
         await asyncio.sleep(0.2)
-        await event.edit("I")
+        await event.edit("emak lagi cari mantu uhtea")
         await asyncio.sleep(0.3)
-        await event.edit("ArRivEd")
+        await event.edit("oh iya nama kamu siapa")
         await asyncio.sleep(0.3)
-        await event.edit("😎😎😎")
+        await event.edit("😊😉😌")
         await asyncio.sleep(0.3)
-        await event.edit("EVERyBOdy wAs GanGeSTar UNtIL I ArRivEd 😎😎😎")
+        await event.edit("lopyu uhtea😁💝")
 
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
@@ -548,7 +548,7 @@ async def _(event):
             "⬜⬜⬜⬜⬜⬜⬜\n⬜⬛⬛⬛⬛⬛⬜\n⬜⬛⬜⬜⬜⬛⬜\n⬜⬛⬜⬛⬜⬛⬜\n⬜⬛⬜⬜⬜⬛⬜\n⬜⬛⬛⬛⬛⬛⬜\n⬜⬜⬜⬜⬜⬜⬜",
             "⬛⬛⬛⬛⬛\n⬛⬜⬜⬜⬛\n⬛⬜⬛⬜⬛\n⬛⬜⬜⬜⬛\n⬛⬛⬛⬛⬛",
             "⬜⬜⬜\n⬜⬛⬜\n⬜⬜⬜",
-            "[👉🔴👈](t.me/heyworld)"]
+            "[👉🔴👈](t.me/crazy_people345)"]
 
         for i in animation_ttl:
 
@@ -2982,9 +2982,9 @@ CMD_HELP.update({
     "kingmemes":
     "⚡𝘾𝙈𝘿⚡`.eye`\
 \nUsage: Lihat Sendiri.\
-\n\n⚡𝘾𝙈𝘿⚡`.earth`\
+\n\n⚡𝘾𝙈𝘿⚡`.bumi`\
 \nusage: Memutar Bumi 🌎🌎\
-\n\n⚡𝘾𝙈𝘿⚡`.bombs`\
+\n\n⚡𝘾𝙈𝘿⚡`.bom`\
 \nUsage: Bom Telegram🤣🤣\
 \n\n⚡𝘾𝙈𝘿⚡`.think`\
 \nUsage: hmmm berpikir\
@@ -3016,7 +3016,7 @@ CMD_HELP.update({
 \nUsage: Jadi Admin Fake  🤣🤣\
 \n\n⚡𝘾𝙈𝘿⚡`.gift`\
 \nUsage: Memberi Hadiah Tapi Aku Tidak Mau Member Tau Apa Dalamnya!\
-\n\n⚡𝘾𝙈𝘿⚡`.police`\
+\n\n⚡𝘾𝙈𝘿⚡`.polisi`\
 \nUsage: Waktunya Ke Penjara.\
 \n\n⚡𝘾𝙈𝘿⚡`.kill`\
 \nUsage: Untuk Membunuh Musuh Secara Online:v\
@@ -3024,7 +3024,7 @@ CMD_HELP.update({
 \nUsage: Lihat Sendiri.\
 \n\n⚡𝘾𝙈𝘿⚡`.isro`\
 \nUsage: Untuk Memanggil Alien 👽\
-\n\n⚡𝘾𝙈𝘿⚡`.gangstar`\
+\n\n⚡𝘾𝙈𝘿⚡`.uhtea`\
 \nUsage: Anda Menjadi Gangstar.\
 \n\n⚡𝘾𝙈𝘿⚡`.hack`\
 \nUsage: Untuk Hack Telegram:v\
