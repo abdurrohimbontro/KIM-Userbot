@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 # inline credit @keselekpermen69
-# Pengguna King-Userbot
+# Pengguna Kim-Userbot
 """ Userbot initialization. """
 
 import os
@@ -60,7 +60,7 @@ CONFIG_CHECK = os.environ.get(
 
 if CONFIG_CHECK:
     LOGS.info(
-        "Please remove the line mentioned in the first hashtag from the config.env file"
+        "Please remove the line mentio jiwaned in the first hashtag from the config.env file"
     )
     quit(1)
 
@@ -101,9 +101,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/apisuserbot/King-Userbot.git")
+    "https://github.com/abdurrohimbontro/Kim-Userbot.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "King-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Kim-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -180,7 +180,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/1bf2eacc0f1aaca83eaa5.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/1ff2a9a9ce2fb29c98e1b.png"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -319,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Telah Aktif```")
+    await bot.send_message(BOTLOG_CHATID, "```🍁𝐊𝐈𝐌 𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 𝐓𝐞𝐥𝐚𝐡 𝐚𝐤𝐭𝐢𝐟🌱```")
     return
 
 with bot:
@@ -349,7 +349,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline("{} {} ⚡".format("⚡", x), data="ub_modul_{}".format(x))
+        custom.Button.inline("{} {} 🍁".format("🍁", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -390,9 +390,9 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/apisuserbot/King-Userbot.git)")
+                await event.reply("🍁𝐊𝐈𝐌 𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/abdurrohimbontro/Kim-Userbot.git)")
             else:
-                await event.reply(f"`Hai King {ALIVE_NAME}\n\nApa Kabarmu? ^_^`")
+                await event.reply(f"`Hai Tuan Muda {ALIVE_NAME}\n\nApa Kabarmu? ^_^`")
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
@@ -403,8 +403,8 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**☯ Jumlah Modul Yang Tersedia:** `{}`\n               \n**☯ Daftar Modul King Userbot:** \n".format(
-                        "**⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡**",
+                    text="{}\n\n**☯ Jumlah Modul Yang Tersedia:** `{}`\n               \n**☯ Daftar Modul Kim Userbot:** \n".format(
+                        "**🍁𝐊𝐈𝐌 𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -418,16 +418,16 @@ with bot:
                     link_preview=True)
             else:
                 result = builder.article(
-                    "**⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡**",
-                    text="""**Anda Bisa Membuat King Userbot Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/USERBOT_GROUP)""",
+                    "**🍁𝐊𝐈𝐌 𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁**",
+                    text="""**Anda Bisa Membuat Kim Userbot Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/USERBOT_GROUP)""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "⚡𝗞𝗶𝗻𝗴⚡",
-                                "https://github.com/apisuserbot/King-Userbot"),
+                                "🍁𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁",
+                                "https://github.com/abdurrohimbontro/Kim-Userbot"),
                             custom.Button.url(
-                                "𝗠𝗮𝘀𝘁𝗮𝗵",
-                                "t.me/PacarFerdilla")],
+                                "🍁𝐊𝐈𝐌🍁",
+                                "t.me/warga_pati")],
                     ],
                     link_preview=False,
                 )
@@ -447,7 +447,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"𝙀𝙧𝙤𝙧 404 𝙉𝙤𝙩 𝙁𝙤𝙪𝙣𝙙 King Userbot Anda Sendiri, Jangan Menggunakan Milik King {ALIVE_NAME}"
+                reply_pop_up_alert = f"𝙀𝙧𝙤𝙧 404 𝙉𝙤𝙩 𝙁𝙤𝙪𝙣𝙙 Kim Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan Muda {ALIVE_NAME}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -465,7 +465,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"𝙀𝙧𝙤𝙧 404 𝙉𝙤𝙩 𝙁𝙤𝙪𝙣𝙙 King Userbot Anda Sendiri, Jangan Menggunakan Milik King {ALIVE_NAME}"
+                reply_pop_up_alert = f"𝙀𝙧𝙤𝙧 404 𝙉𝙤𝙩 𝙁𝙤𝙪𝙣𝙙 Kim Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan Muda {ALIVE_NAME}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -496,7 +496,7 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"𝙀𝙧𝙤𝙧 404 𝙉𝙤𝙩 𝙁𝙤𝙪𝙣𝙙 King Userbot Anda Sendiri, Jangan Menggunakan Milik King {ALIVE_NAME}"
+                reply_pop_up_alert = f"𝙀𝙧𝙤𝙧 404 𝙉𝙤𝙩 𝙁𝙤𝙪𝙣𝙙 Kim Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan Muda {ALIVE_NAME}"
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
