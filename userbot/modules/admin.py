@@ -36,14 +36,14 @@ from userbot.events import register
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "`Gambar Terlalu Kecil`"
 PP_ERROR = "`Gagal Memproses Gambar`"
-NO_ADMIN = "`King Gagal Dikarenakan Bukan Admin :)`"
+NO_ADMIN = "`maaf saya Gagal Dikarenakan Bukan Admin :)`"
 NO_PERM = "`Tidak Mempunyai Izin!`"
 NO_SQL = "`Berjalan Pada Mode Non-SQL`"
 
 CHAT_PP_CHANGED = "`Sukses Mengubah Profil Grup`"
 CHAT_PP_ERROR = (
     "`Ada Masalah Dengan Memperbarui Foto,`"
-    "`Mungkin Karna King Bukan Admin,`"
+    "`Mungkin Karna tuan muda Bukan Admin,`"
     "`Atau Tidak Mempunyai Izin.`"
 )
 INVALID_MEDIA = "`Media Tidak Valid`"
@@ -331,10 +331,10 @@ async def spider(spdr):
     self_user = await spdr.client.get_me()
 
     if user.id == self_user.id:
-        return await spdr.edit("`Tidak Bisa Membisukan Diri Sendiri:)`")
+        return await spdr.edit("`Tidak Bisa Membisukan Diri Sendiri goblok:)`")
 
-    if user.id == 1682708454:
-        return await spdr.edit("`Sepertinya Anda Tidak Bisa Mute Pengguna Tersebut , Karena Dia Adalah Pembuat Saya 😈`")
+    if user.id == 1547381425:
+        return await spdr.edit("`Sepertinya Anda Tidak Bisa Mute Pengguna Tersebut , Karena Dia Adalah TUAN MUDA 𝒦𝒾𝓂`")
 
     # If everything goes well, do announcing and mute
     await spdr.edit(
@@ -521,10 +521,10 @@ async def gspider(gspdr):
     self_user = await gspdr.client.get_me()
 
     if user.id == self_user.id:
-        return await gspdr.edit("`Tidak Bisa Membisukan Diri Sendiri:)`")
+        return await gspdr.edit("`Tidak Bisa Membisukan Diri Sendiri goblok:)`")
 
-    if user.id == 1682708454:
-        return await gspdr.edit("`Sepertinya Anda Tidak Bisa Gloabl Mute Pengguna Tersebut , Karena Dia Adalah Pembuat Saya 😈`")
+    if user.id == 1547381425:
+        return await gspdr.edit("`Sepertinya Anda Tidak Bisa Gloabl Mute Pengguna Tersebut , Karena Dia Adalah TUAN MUDA 𝒦𝒾𝓂`")
 
     # If pass, inform and start gmuting
     await gspdr.edit("`Sukses Membisukan Pengguna!`")
@@ -627,7 +627,7 @@ async def rm_deletedacc(show):
 async def get_admin(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "Grup Ini"
-    mentions = f"<b>👑 Daftar Admin Grup {title}:</b> \n"
+    mentions = f"<b>🍁 Daftar Admin Grup {title}:</b> \n"
     try:
         async for user in show.client.iter_participants(
             show.chat_id, filter=ChannelParticipantsAdmins
