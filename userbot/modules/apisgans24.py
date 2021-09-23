@@ -46,14 +46,12 @@ async def koc(e):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`\n(\\_/)`"
-                     "`\n(●_●)`"
-                     "`\n />❤️ *Ini buat kamu sayang`"
-                     "`         jagain ya`")
+                     "`\n(●_●)  *Ini buat kamu sayang`"
+                     "`\n />❤️) *Jagain hati aku ya`")
     sleep(3)
     await typew.edit("`\n(\\_/)`"
-                     "`\n(●_●)`"
-                     "`\n/>💔  *Aku Ambil Lagi ya maaf`"
-                     "`         udh di kasih gratis di patahin`")
+                     "`\n(●_●)  *Aku Ambil Lagi ya maaf`"
+                     "`\n/>💔   *udh di kasih gratis di patahin`")
     sleep(2)
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
