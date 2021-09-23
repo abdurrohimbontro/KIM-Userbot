@@ -51,7 +51,7 @@ async def randomise(items):
 async def sleepybot(time):
     """ For .sleep command, let the userbot snooze for a few second. """
     counter = int(time.pattern_match.group(1))
-    await time.edit("`Saya tidur dulu King...⚡️`")
+    await time.edit("`Saya tidur dulu Tuan Muda...🍁`")
     if BOTLOG:
         str_counter = time_formatter(counter)
         await time.client.send_message(
@@ -65,23 +65,23 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan King-Userbot....`")
+    await event.edit("`Mematikan Kim-Userbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`King-Userbot Telah Dimatikan`")
+                                        "`Kim-Userbot Telah Dimatikan`")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting King-Userbot...`")
+    await event.edit("`Restarting Kim-Userbot...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`King-Userbot Telah Di Restart`")
+                                        "`Kim-Userbot Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -93,7 +93,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Beberapa Repo Dan File:\n"
-        "\n[⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️ Repo](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/README.md)"
+        "\n[🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁 Repo](https://github.com/abdurrohimbontro/Kim-Userbot/blob/Kim-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -122,12 +122,12 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "╭─━━━━━━━━━━━━━─╮\n"
         "                  Repo\n"
-        "     [⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡](https://github.com/apisuserbot/King-Userbot)\n"
+        "     [🍁𝐊𝐈𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁](https://github.com/abdurrohimbontro/Kim-Userbot)\n"
         "╭─━━━━━━━━━━━━━─╯\n"
-        "│👨‍💻 **Mastah :** [Apis](t.me/PacarFerdilla)\n"
+        "│👨‍💻 **🌱𝐊𝐈𝐌🌱 :** [🍁𝐊𝐈𝐌🍁](t.me/warga_pati)\n"
         "╰━━━━━━━━━━━━━━━╯\n"
-        "  Tutorial    : [Tutorial Deploy](https://telegra.ph/Deploy-04-06)"
-        "  Deploy King : [Tekan Disini](https://heroku.com/deploy?template=https://github.com/apisuserbot/King-Userbot/tree/King-Userbot)"
+        "  Tutorial       : [Tutorial Deploy](https://telegra.ph/Deploy-04-06)"
+        "  Deploy 🍁𝐊𝐈𝐌🍁: [Tekan Disini](https://heroku.com/deploy?template=https://github.com/abdurrohimbontro/Kim-Userbot/tree/Kim-Userbot)"
     )
 
 
@@ -166,7 +166,7 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await bot.download_media(message, photo)
     else:
-        await img.edit("`Harap Balas Di Gambar King`")
+        await img.edit("`Harap Balas Di Gambar Tuan`")
         return
 
     if photo:
