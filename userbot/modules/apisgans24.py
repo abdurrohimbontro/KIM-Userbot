@@ -140,7 +140,7 @@ async def typewriter(typew):
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
                      "`\n💖<\\  *Tapi Bo'ong eaaaaaaak`")
-# Alpinnnn Gans
+# Abdurrohim
 
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
@@ -173,8 +173,8 @@ async def _(event):
 
             await event.edit(animation_chars[i % 6])
 # kim biasa aja
-# Alvin Gans
-# Lord
+# hdeeeh
+# kim
 CMD_HELP.update({
     "animasi":
     "`.nah` ; `.huh` ; `.lopyu`\
@@ -186,5 +186,5 @@ CMD_HELP.update({
     \n\n`.hua`\
     \n⚡𝘾𝙈𝘿⚡: nangis.\
     \n\n`.ceritacinta` ; `.canda`\
-    \n⚡𝘾𝙈𝘿⚡: liat sendiri"
+    \n⚡𝘾𝙈𝘿⚡: delok dewe"
 })
