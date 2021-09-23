@@ -59,7 +59,7 @@ CMD_HELP.update({
     \n\n⚡𝘾𝙈𝘿⚡`.sadboy`\
     \nUsage: hiks\
     \n\n⚡𝘾𝙈𝘿⚡`.punten` ; ⚡𝘾𝙈𝘿⚡`.pantau`\
-    \nUsage: coba aja.\
+    \nUsage: cobain aja.\
     \n\n⚡𝘾𝙈𝘿⚡`.mrk`\
     \nUsage: coba aja.\
     \n\n⚡𝘾𝙈𝘿⚡`kosong`\
