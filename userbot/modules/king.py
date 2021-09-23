@@ -40,7 +40,7 @@ async def typewriter(typew):
                      "`\n┻┳T￣|`"
                      "\n**Masih Ku Pantau**")
 
-   
+
 @register(outgoing=True, pattern='^.mrk(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)

@@ -116,7 +116,6 @@ async def type_afk_is_not_true(notafk):
                     "[" + name0 + "](tg://user?id=" + str(i) + ")" +
                     " Mengirim Mu " + "`" + str(USERS[i]) + " Pesan`",
                 )
-        COUNT_MSG = 0
         USERS = {}
         AFKREASON = None
 
