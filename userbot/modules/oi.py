@@ -9,7 +9,7 @@ async def typewriter(typew):
     await typew.edit("`Hai Perkenalkan Namaku 𝐊𝐈𝐌`")
     sleep(3)
     await typew.edit("`setiap Tahun tambah`")
-    sleep(1)
+    sleep(2)
     await typew.edit("`Tinggal Di pati Jawa tengah Indonesia, Salam Kenal:)`")
 # Create by myself @localheart
 
