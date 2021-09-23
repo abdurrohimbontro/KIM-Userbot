@@ -463,19 +463,19 @@ async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in (
             "/", "#", "@", "!"):
         await event.edit("ehm UHTEA")
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(2)
         await event.edit("boleh kenalan gak?")
-        await asyncio.sleep(0.2)
+        await asyncio.sleep(2)
         await event.edit("kenalan aku kim")
-        await asyncio.sleep(0.5)
+        await asyncio.sleep(2)
         await event.edit("pas banget nih")
-        await asyncio.sleep(0.2)
+        await asyncio.sleep(2)
         await event.edit("emak lagi cari mantu uhtea")
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(2)
         await event.edit("oh iya nama kamu siapa")
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(2)
         await event.edit("😊😉😌")
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(2)
         await event.edit("lopyu uhtea😁💝")
 
 
