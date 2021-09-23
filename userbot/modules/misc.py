@@ -99,21 +99,21 @@ async def reedme(e):
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
 
 
-@register(outgoing=True, pattern="^.repeat (.*)")
+@ register(outgoing=True, pattern="^.repeat (.*)")
 async def repeat(rep):
-    cnt, txt = rep.pattern_match.group(1).split(' ', 1)
-    replyCount = int(cnt)
-    toBeRepeated = txt
+    cnt, txt=rep.pattern_match.group(1).split(' ', 1)
+    replyCount=int(cnt)
+    toBeRepeated=txt
 
-    replyText = toBeRepeated + "\n"
+    replyText=toBeRepeated + "\n"
 
     for i in range(0, replyCount - 1):
         replyText += toBeRepeated + "\n"
 
     await rep.edit(replyText)
-     
 
-@register(outgoing=True, pattern="^.repo$")
+
+@ register(outgoing=True, pattern="^.repo$")
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
@@ -127,7 +127,7 @@ async def repo_is_here(wannasee):
         )
 
 
-@register(outgoing=True, pattern="^.raw$")
+@ register(outgoing=True, pattern="^.raw$")
 async def raw(event):
     the_real_message=None
     reply_to_id=None
@@ -151,7 +151,7 @@ async def raw(event):
             caption="`Here's the decoded message data !!`")
 
 
-@register(outgoing=True, pattern=r"^.reverse(?: |$)(\d*)")
+@ register(outgoing=True, pattern=r"^.reverse(?: |$)(\d*)")
 async def okgoogle(img):
     """ For .reverse command, Google search images and stickers. """
     if os.path.isfile("okgoogle.png"):
