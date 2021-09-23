@@ -51,7 +51,7 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)  *Aku Ambil Lagi ya maaf`"
-                     "`\n/>💔   *udh di kasih gratis di patahin`")
+                     "`\n/>💔  *udh di kasih di patahin`")
     sleep(2)
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
