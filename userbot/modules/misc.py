@@ -99,7 +99,7 @@ async def reedme(e):
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
 
 
-@ register(outgoing=True, pattern="^.repeat (.*)")
+@register(outgoing=True, pattern="^.repeat (.*)")
 async def repeat(rep):
     cnt, txt=rep.pattern_match.group(1).split(' ', 1)
     replyCount=int(cnt)
