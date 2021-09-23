@@ -1,37 +1,38 @@
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5520759.gif" width="802" height="96" alt="King Userbot" /></a>
+# 🍁KIM USERBOT🍁
+<img src="https://telegra.ph/file/1ff2a9a9ce2fb29c98e1b.png" width="800" height="100" alt="King Userbot" /></a>
 
 <p align="center">
-  <a href="https://github.com/apisuserbot/King-Userbot/fork">
-    <img src="https://img.shields.io/github/forks/apisuserbot/King-Userbot?label=Fork&style=social">
+  <a href="https://github.com/abdurrohimbontro/Kim-Userbot/fork">
+    <img src="https://img.shields.io/github/forks/abdurrohimbontro/Kim-Userbot?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/apisuserbot/King-Userbot">
-    <img src="https://img.shields.io/github/stars/apisuserbot/King-Userbot?style=social">
+  <a href="https://github.com/abdurrohimbontro/Kim-Userbot">
+    <img src="https://img.shields.io/github/stars/abdurrohimbontro/Kim-Userbot?style=social">
   </a>
 </p>
 
 <p align="left">
-  <a href="https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE"><img src="https://img.shields.io/github/license/apisuserbot/King-Userbot?&style=social&logo=github">
+  <a href="https://github.com/abdurrohimbontro/Kim-Userbot/blob/Kim-Userbot/LICENSE"><img src="https://img.shields.io/github/license/abdurrohimbontro/Kim-Userbot?&style=social&logo=github">
   </a></p>
 
-![Repo Size](https://img.shields.io/github/repo-size/apisuserbot/King-Userbot?&style=plastic&logo=github)
-[![GitHub issues](https://img.shields.io/github/issues/apisuserbot/King-Userbot?&style=plastic&logo=github)](https://github.com/apisuserbot/King-Userbot/issues)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/apisuserbot/King-Userbot?&style=plastic&logo=github)](https://github.com/apisuserbot/King-Userbot/graphs/commit-activity)
-[![GitHub contributors](https://img.shields.io/github/contributors/apisuserbot/King-Userbot?&style=plastic&logo=github)](https://GitHub.com/apisuserbot/King-Userbot/graphs/contributors/)
+![Repo Size](https://img.shields.io/github/repo-size/abdurrohimbontro/Kim-Userbot?&style=plastic&logo=github)
+[![GitHub issues](https://img.shields.io/github/issues/abdurrohimbontro/Kim-Userbot?&style=plastic&logo=github)](https://github.com/abdurrohimbontro/Kim-Userbot/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/abdurrohimbontro/Kim-Userbot?&style=plastic&logo=github)](https://github.com/abdurrohimbontro/Kim-Userbot/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/abdurrohimbontro/Kim-Userbot?&style=plastic&logo=github)](https://GitHub.com/abdurrohimbontro/Kim-Userbot/graphs/contributors/)
 <p align="justify">
-<a href="https://hub.docker.com/r/apiskinguserbot/kinguserbot"> <img src="https://img.shields.io/docker/image-size/apiskinguserbot/kinguserbot/Buster?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
-<a href="https://hub.docker.com/r/apiskinguserbot/kinguserbot/tags"> <img src="https://img.shields.io/docker/v/apiskinguserbot/kinguserbot/Buster?label=docker%20version&logo=docker&style=for-the-badge" /></a>
+<a href="https://hub.docker.com/r/abdurrohimbontro/kimuserbot"> <img src="https://img.shields.io/docker/image-size/abdurrohimbontro/kimuserbot/Buster?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
+<a href="https://hub.docker.com/r/abdurrohimbontro/kimuserbot/tags"> <img src="https://img.shields.io/docker/v/abdurrohimbontro/Kimuserbot/Buster?label=docker%20version&logo=docker&style=for-the-badge" /></a>
 </p>
 
-![King Userbot Logo](https://telegra.ph/file/1bf2eacc0f1aaca83eaa5.jpg)
+![Kim-Userbot](https://telegra.ph/file/cc138d165c7301c06439a.png)
 
 <h3 align="center">Userbot Yang Digunakan Untuk Bersenang-Senang Di Telegram</h3>
 <p align="center">&nbsp;</p>
 
-### Repo King Userbot
-Repo Yang Dibuat [Apis](https://t.me/PacarFerdilla) Dari Berbagai Repo Userbot Github 
+### Repo  KIM USERBOT
+Repo Yang Dibuat [🌱KIM 🌱](https://t.me/warga_pati) Dari Berbagai Repo Userbot Github 
 
-## Cara Deploy 👷
+## Cara Deploy ✍️
 
 ```
   > Pertama, dapatkan API_KE & API_HASH di my.telegram.org (wajib)
@@ -45,39 +46,17 @@ Repo Yang Dibuat [Apis](https://t.me/PacarFerdilla) Dari Berbagai Repo Userbot G
   > Akhirnya nyalakan aplikasi dan periksa log (pengaturan -> lihat log) nikmati :)
 ```
 
-## Group Support 🛠
+## Group Support 🏷️
 
-   <a href="https://t.me/KingUserbotSupport"><img src="https://img.shields.io/badge/Grup%20Support%3F-King-green?&style=flat-square?&logo=telegram" width=220px></a></p>
-
-
-## <p align="center">DEPLOY KING-USERBOT</p>
+   <a href="https://t.me/crazy_people345"><img src="https://img.shields.io/badge/Grup%20Random%3F-Kim-red? &style=flat-square?&logo=telegram" width=220px></a></p>
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/apisuserbot/King-Userbot/tree/King-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-magenta?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+## <p align="center">DEPLOY KIM-USERBOT</p>
+
+
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/abdurrohimbontro/Kim-Userbot/tree/Kim-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-blue?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <br>
 </p>
 
-## Kredit
-  Terimakasih untuk 
-
-*   [Alvin](https://github.com/Zora24/Lord-Userbot) - Lord Userbot
-*   [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
-*   [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
-*   [Mkaraniya](https://github.com/mkaraniya) & [Dev73](https://github.com/Devp73) - OpenUserBot
-*   [Mr.Miss](https://github.com/keselekpermen69) - UserButt
-*   [adekmaulana](https://github.com/adekmaulana) - ProjectBish
-*   [MoveAngel](https://github.com/MoveAngel) - One4uBot
-*   [AidilAryanto](https://github.com/aidilaryanto) - ProjectDils 
-*   [Alfianandaa](https://github.com/alfianandaa/ProjectAlf) - ProjectAlf
-*   [AnggaR69s](https://github.com/GengKapak/DCLXVI) - DCLXVI
-*   [kandnub](https://github.com/kandnub) - TG-UserBot
-*   [༺αиυвιѕ༻](https://github.com/Dark-Princ3) - X-tra-Telegram
-*   [Sahyam2019](https://github.com/sahyam2019/oub-remix) - oub-remix
-*   [TeamUserge](https://github.com/UsergeTeam/Userge) - Userge
-*   Dan Lainnya
-
-## Team King-Userbot
-  Kami mempunyai team yang clone dari ultroid mohon di bantu project baru kami 
-
-*   [TeamKing-Userbot](https://github.com/DoellBarr/TeamKing-Userbot) - TeamKing-Userbot
+# CEKAP SMANTEN MATUR NUWUN
