@@ -124,7 +124,7 @@ async def repo_is_here(wannasee):
         "│👨‍💻 **Tuan Muda :** [🍁𝐊𝐈𝐌🍁](t.me/warga_pati)\n"
         "╰━━━━━━━━━━━━━━━╯\n"
         "  Deploy King : [Tekan Disini](https://heroku.com/deploy?template=https://github.com/abdurrohimbontro/Kim-Userbot/tree/Kim-Userbot)"
-    )
+        )
 
 
 @ register(outgoing=True, pattern="^.raw$")
@@ -180,7 +180,7 @@ async def okgoogle(img):
         multipart={
             'encoded_image': (name, open(name, 'rb')),
             'image_content': ''
-        }
+             }
         response=requests.post(searchUrl,
                                  files=multipart,
                                  allow_redirects=False)
