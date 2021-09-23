@@ -101,9 +101,9 @@ async def reedme(e):
 
 @ register(outgoing=True, pattern="^.repeat (.*)")
 async def repeat(rep):
-    cnt, txt=rep.pattern_match.group(1).split(' ', 1)
-    replyCount=int(cnt)
-    toBeRepeated=txt
+    cnt, txt = rep.pattern_match.group(1).split(' ', 1)
+    replyCount = int(cnt)
+    toBeRepeated = txt
 
     replyText=toBeRepeated + "\n"
 
