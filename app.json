@@ -1,7 +1,7 @@
 {
-  "name": "King-Userbot",
-  "description": "[King-Userbot] USERBOT TELEGRAM.",
-  "logo": "https://telegra.ph/file/1bf2eacc0f1aaca83eaa5.jpg",
+  "name": "Kim-Userbot",
+  "description": "[Kim-Userbot] USERBOT TELEGRAM.",
+  "logo": "https://telegra.ph/file/1ff2a9a9ce2fb29c98e1b.png",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/apisuserbot/King-Userbot",
-  "telegram": "https://t.me/PacarFerdilla",
-  "success_url": "https://t.me/PacarFerdilla",
+  "repository": "https://github.com/abdurrohimbontro/Kim-Userbot",
+  "telegram": "https://t.me/warga_pati",
+  "success_url": "https://t.me/warga_pati",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -42,7 +42,7 @@
     },
     "BOTLOG_CHATID": {
       "description": "Buatlah sebuah grup private/public masukan bot rose lalu ketik /id.",
-      "value": "Isi id grup mu",
+      "value": "-1001305297430",
       "required": true
     },
     "CONSOLE_LOGGER_VERBOSE": {
@@ -151,7 +151,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default Bio Mu.",
-      "value": "⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️",
+      "value": "🍁𝐊𝐈𝐌 𝐔𝐒𝐄𝐑𝐁𝐎𝐓🍁",
       "required": false
     },
     "ALIVE_NAME": {
@@ -168,7 +168,7 @@
     },
     "G_BAN_LOGGER_GROUP": {
       "description": "Buatlah Sebuah Grup Private/Public Lalu Masukkan Bot Rose Lalu Ketik /id.",
-      "value": "Isi id grup mu",
+      "value": "-1001305297430",
       "required": false
     },
     "G_DRIVE_DATA": {
@@ -198,7 +198,7 @@
     },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
-      "value": "Jakarta",
+      "value": "pati Jawa tengah Indonesia",
       "required": false
     },
     "LOGSPAMMER": {
