@@ -47,11 +47,13 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
-                     "`\n />❤️ *Ini buat kamu sayang jagaon ya`")
+                     "`\n />❤️ *Ini buat kamu sayang`"
+                     "`         jagain ya`")
     sleep(3)
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
-                     "`\n/>💔  *Aku Ambil Lagi lah udh di kasih gratis di patahin`")
+                     "`\n/>💔  *Aku Ambil Lagi ya maaf`"
+                     "`         udh di kasih gratis di patahin`")
     sleep(2)
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
