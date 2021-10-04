@@ -329,7 +329,7 @@ async def typewriter(typew):
                      "━━━━━━━━━━━━━━━━━\n")
 
 CMD_HELP.update({
-    "vip":lp
+    "vip": lp
     "`.bulan` ; `.hati` ; `.bernyanyi`\
     \n⚡𝘾𝙈𝘿⚡: liat aja.\
     \n\n`.helikopter` ; `.tank` ; `.tembak`\n`.bundir`\
