@@ -211,8 +211,9 @@ async def typewriter(typew):
                      "░░███░░░░░░░░░██████\n"
                      "░░██░░░░░░░░░░░████\n"
                      "░░░░░░░░░░░░░░░░███\n"
-                     "░░░░░░░░░░░░░░░░░░░\n")  
-                
+                     "░░░░░░░░░░░░░░░░░░░\n")
+
+
 @register(outgoing=True, pattern='^.y(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
