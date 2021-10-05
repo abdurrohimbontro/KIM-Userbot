@@ -341,5 +341,5 @@ CMD_HELP.update({
     \n\n`.ular` ; `.babi` ; `.foff` ; `.foto` ; `.ajg`\
     \n⚡𝘾𝙈𝘿⚡: liat sendiri.\
     \n\n`.kim`\
-    \n⚡𝘾𝙈𝘿⚡: liat sendiri"
+    \n⚡𝘾𝙈𝘿⚡: liat aja  sndiri"
 })
