@@ -244,9 +244,9 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.babi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("┈┈┏━╮╭━┓┈╭━━━━━━━━━━━╮\n"
-                     "┈┈┃┏┗┛┓┃╭┫  ngepet kuy ┃\n"
-                     "┈┈╰┓▋▋┏╯╯╰━━━━━━━━━━━╯\n"
+    await typew.edit("┈┈┏━╮╭━┓┈╭━━━━━━━━╮\n"
+                     "┈┈┃┏┗┛┓┃╭┃ngepet kuy|\n"
+                     "┈┈╰┓▋▋┏╯╯╰━━━━━━━━╯\n"
                      "┈╭━┻╮╲┗━━━━╮╭╮┈\n"
                      "┈┃▎▎┃╲╲╲╲╲╲┣━╯┈\n"
                      "┈╰━┳┻▅╯╲╲╲╲┃┈┈┈\n"
