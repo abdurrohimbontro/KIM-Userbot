@@ -9,10 +9,13 @@ import traceback
 import time
 import random
 
-api_id = 0000000   #Enter Your 7 Digit Telegram API ID.
-api_hash = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'   #Enter Yor 32 Character API Hash.
-phone = '+63xxxxxxxxxxxxx'   #Enter Your Mobilr Number With Country Code.
+api_id = 0000000  # Enter Your 7 Digit Telegram API ID.
+# Enter Yor 32 Character API Hash.
+api_hash = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+phone = '+63xxxxxxxxxxxxx'  # Enter Your Mobilr Number With Country Code.
 client = TelegramClient(phone, api_id, api_hash)
+
+
 async def main():
     # Now you can use all client methods listed below, like for example...
     await client.send_message('me', 'Hello !!!!!')
@@ -28,8 +31,8 @@ if not client.is_user_authorized():
     client.sign_in(phone, input('40779'))
 
 users = []
-with open(r"Scrapped.csv", encoding='UTF-8') as f:  #Enter your file name
-    rows = csv.reader(f,delimiter=",",lineterminator="\n")
+with open(r"Scrapped.csv", encoding='UTF-8') as f:  # Enter your file name
+    rows = csv.reader(f, delimiter=",", lineterminator="\n")
     next(rows, None)
     for row in rows:
         user = {}
@@ -55,9 +58,9 @@ chats.extend(result.chats)
 
 for chat in chats:
     try:
-        if chat.megagroup == True:
+        if chat.megagroup:
             groups.append(chat)
-    except:
+    except BaseException:
         continue
 
 print('Choose a group to add members:')
@@ -69,7 +72,8 @@ for group in groups:
 g_index = input("Enter a Number: ")
 target_group = groups[int(g_index)]
 
-target_group_entity = InputPeerChannel(target_group.id, target_group.access_hash)
+target_group_entity = InputPeerChannel(
+    target_group.id, target_group.access_hash)
 
 mode = int(input("Enter 1 to add by username or 2 to add by ID: "))
 
@@ -100,7 +104,7 @@ for user in users:
         print("The user's privacy settings do not allow you to do this. Skipping.")
         print("Waiting for 5 Seconds...")
         time.sleep(random.randrange(0, 5))
-    except:
+    except BaseException:
         traceback.print_exc()
         print("Unexpected Error")
         continue
