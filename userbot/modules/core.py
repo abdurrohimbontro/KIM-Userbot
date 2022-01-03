@@ -1,77 +1,85 @@
-# Credits: @mrismanaziz
-# FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
-# t.me/SharingUserbot & t.me/Lunatic0de
-
-import os
+from userbot.utils import command, remove_plugin, load_module
 from pathlib import Path
+import asyncio
+import os
+from datetime import datetime
 
-from userbot import CMD_HELP, bot
-from userbot.events import man_cmd
-from userbot.utils import edit_or_reply, load_module, remove_plugin, reply_id
+DELETE_TIMEOUT = 5
 
 
-@bot.on(man_cmd(outgoing=True, pattern="install$"))
-async def _(event):
+@command(pattern="^.install", outgoing=True)
+async def install(event):
     if event.fwd_from:
         return
     if event.reply_to_msg_id:
         try:
-            await event.edit("`Installing Modules...`")
-            downloaded_file_name = (
-                await event.client.download_media(  # pylint:disable=E0602
-                    await event.get_reply_message(),
-                    "userbot/modules/",  # pylint:disable=E0602
-                )
+            downloaded_file_name = await event.client.download_media(  # pylint:disable=E0602
+                await event.get_reply_message(),
+                "userbot/modules/"  # pylint:disable=E0602
             )
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)
                 shortname = path1.stem
                 load_module(shortname.replace(".py", ""))
-                await event.edit(
-                    "**Plugin** `{}` **Berhasil di install**".format(
-                        os.path.basename(downloaded_file_name)
-                    )
-                )
+                await event.edit("Installed Plugin `{}`".format(os.path.basename(downloaded_file_name)))
             else:
                 os.remove(downloaded_file_name)
-                await event.edit("**Error!** Plugin ini sudah terinstall di userbot.")
-        except Exception as e:
+                await event.edit("Errors! This plugin is already installed/pre-installed.")
+        except Exception as e:  # pylint:disable=C0103,W0703
             await event.edit(str(e))
             os.remove(downloaded_file_name)
+    await asyncio.sleep(DELETE_TIMEOUT)
+    await event.delete()
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"psend ([\s\S]*)"))
+@command(pattern=r"^.send (?P<shortname>\w+)$", outgoing=True)
 async def send(event):
-    reply_to_id = await reply_id(event)
-    input_str = event.pattern_match.group(1)
-    the_plugin_file = f"./userbot/modules/{input_str}.py"
-    if os.path.exists(the_plugin_file):
-        caat = await event.client.send_file(
-            event.chat_id,
-            the_plugin_file,
-            force_document=True,
-            thumb="userbot/resources/logo.jpg",
-            allow_cache=False,
-            reply_to=reply_to_id,
-            caption=f"➠ **Nama Plugin:** `{input_str}`",
-        )
-        await event.delete()
-    else:
-        await edit_or_reply(event, "**ERROR: Modules Tidak ditemukan**")
+    if event.fwd_from:
+        return
+    message_id = event.message.id
+    input_str = event.pattern_match["shortname"]
+    the_plugin_file = "./userbot/modules/{}.py".format(input_str)
+    start = datetime.now()
+    await event.client.send_file(  # pylint:disable=E0602
+        event.chat_id,
+        the_plugin_file,
+        force_document=True,
+        allow_cache=False,
+        reply_to=message_id
+    )
+    end = datetime.now()
+    time_taken_in_ms = (end - start).seconds
+    await event.edit("Uploaded {} in {} seconds".format(input_str, time_taken_in_ms))
+    await asyncio.sleep(DELETE_TIMEOUT)
+    await event.delete()
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"uninstall (?P<shortname>\w+)"))
-async def uninstall(event):
+@command(pattern=r"^.unload (?P<shortname>\w+)$", outgoing=True)
+async def unload(event):
     if event.fwd_from:
         return
     shortname = event.pattern_match["shortname"]
-    dir_path = f"./userbot/modules/{shortname}.py"
     try:
         remove_plugin(shortname)
-        os.remove(dir_path)
-        await event.edit(f"**Berhasil Menghapus Modules** `{shortname}`")
-    except OSError as e:
-        await event.edit("**ERROR:** `%s` : %s" % (dir_path, e.strerror))
+        await event.edit(f"Unloaded {shortname} successfully")
+    except Exception as e:
+        await event.edit("Successfully unload {shortname}\n{}".format(shortname, str(e)))
+
+
+@command(pattern=r"^.load (?P<shortname>\w+)$", outgoing=True)
+async def load(event):
+    if event.fwd_from:
+        return
+    shortname = event.pattern_match["shortname"]
+    try:
+        try:
+            remove_plugin(shortname)
+        except BaseException:
+            pass
+        load_module(shortname)
+        await event.edit(f"Successfully loaded {shortname}")
+    except Exception as e:
+        await event.edit(f"Could not load {shortname} because of the following error.\n{str(e)}")
 
 
 CMD_HELP.update(
