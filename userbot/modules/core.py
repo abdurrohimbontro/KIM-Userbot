@@ -17,7 +17,7 @@ async def _(event):
     if event.reply_to_msg_id:
         try:
             await event.edit("`Installing Modules...`")
-            downloaded_file_name = (
+            downloaded_file_name=(
                 await event.client.download_media(  # pylint:disable=E0602
                     await event.get_reply_message(),
                     "userbot/modules/",  # pylint:disable=E0602
