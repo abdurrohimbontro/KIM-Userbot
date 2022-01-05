@@ -117,7 +117,7 @@ async def pingme(pong):
     await pong.edit("**................**")
     await pong.edit("💘")
     await asyncio.sleep(3)
-    await pong.edit("🍂 ᏦᎥᎷ.ᎥᎴ 🍂)
+    await pong.edit("🍂 ᏦᎥᎷ.ᎥᎴ 🍂")
     await asyncio.sleep(3)
     await Pong.edit("💝")
     await asyncio.sleep(3)
