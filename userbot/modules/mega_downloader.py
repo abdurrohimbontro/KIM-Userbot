@@ -176,7 +176,12 @@ async def mega_downloader(megadl):
     return
 
 
-async def decrypt_file(megadl, file_path, temp_file_path, hex_key, hex_raw_key):
+async def decrypt_file(
+        megadl,
+        file_path,
+        temp_file_path,
+        hex_key,
+        hex_raw_key):
     cmd = "cat '{}' | openssl enc -d -aes-128-ctr -K {} -iv {} > '{}'".format(
         temp_file_path, hex_key, hex_raw_key, file_path
     )

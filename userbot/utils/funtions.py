@@ -8,7 +8,10 @@ from typing import Optional, Tuple
 # function takes  take a screenshot and stores ported from userge
 
 
-async def take_screen_shot(video_file: str, duration: int, path: str = '') -> Optional[str]:
+async def take_screen_shot(
+        video_file: str,
+        duration: int,
+        path: str = '') -> Optional[str]:
     print(
         '[[[Extracting a frame from %s ||| Video duration => %s]]]',
         video_file,
